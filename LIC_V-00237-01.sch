@@ -3671,6 +3671,7 @@ Source: http://www.vishay.com .. dcrcw.pdf</description>
 <part name="D4" library="led" deviceset="OSRAM_LCW_CQ7P." device="" technology="EC-KTLP-5J7K-1-K"/>
 <part name="D5" library="led" deviceset="OSRAM_LCW_CQ7P." device="" technology="EC-KTLP-5J7K-1-K"/>
 <part name="D6" library="led" deviceset="OSRAM_LCW_CQ7P." device="" technology="EC-KTLP-5J7K-1-K"/>
+<part name="D7" library="led" deviceset="OSRAM_LCW_CQ7P." device="" technology="EC-KTLP-5J7K-1-K"/>
 <part name="D8" library="led" deviceset="OSRAM_LCW_CQ7P." device="" technology="EC-KTLP-5J7K-1-K"/>
 <part name="D9" library="led" deviceset="OSRAM_LCW_CQ7P." device="" technology="EC-KTLP-5J7K-1-K"/>
 <part name="D10" library="led" deviceset="OSRAM_LCW_CQ7P." device="" technology="EC-KTLP-5J7K-1-K"/>
@@ -3678,8 +3679,9 @@ Source: http://www.vishay.com .. dcrcw.pdf</description>
 <part name="D12" library="led" deviceset="OSRAM_LCW_CQ7P." device="" technology="EC-KTLP-5J7K-1-K"/>
 <part name="D13" library="led" deviceset="OSRAM_LCW_CQ7P." device="" technology="EC-KTLP-5J7K-1-K"/>
 <part name="J1" library="con-jst" deviceset="?4B-PH-SM4-TB" device="S"/>
-<part name="R1" library="rcl" deviceset="R-EU_" device="R1206"/>
-<part name="R2" library="rcl" deviceset="R-EU_" device="R1206"/>
+<part name="R1" library="rcl" deviceset="R-EU_" device="R1206" value="22R0"/>
+<part name="R3" library="rcl" deviceset="R-EU_" device="R1206" value="2k2"/>
+<part name="R2" library="rcl" deviceset="R-EU_" device="R1206" value="22R0"/>
 </parts>
 <sheets>
 <sheet>
@@ -3693,12 +3695,13 @@ Source: http://www.vishay.com .. dcrcw.pdf</description>
 <instance part="D4" gate="LED" x="63.5" y="86.36"/>
 <instance part="D5" gate="LED" x="63.5" y="76.2"/>
 <instance part="D6" gate="LED" x="63.5" y="66.04"/>
-<instance part="D8" gate="LED" x="109.22" y="119.38"/>
-<instance part="D9" gate="LED" x="109.22" y="106.68"/>
-<instance part="D10" gate="LED" x="109.22" y="93.98"/>
-<instance part="D11" gate="LED" x="109.22" y="81.28"/>
-<instance part="D12" gate="LED" x="109.22" y="68.58"/>
-<instance part="D13" gate="LED" x="109.22" y="55.88"/>
+<instance part="D7" gate="LED" x="127" y="116.84"/>
+<instance part="D8" gate="LED" x="83.82" y="119.38"/>
+<instance part="D9" gate="LED" x="83.82" y="109.22"/>
+<instance part="D10" gate="LED" x="83.82" y="99.06"/>
+<instance part="D11" gate="LED" x="83.82" y="88.9"/>
+<instance part="D12" gate="LED" x="83.82" y="63.5"/>
+<instance part="D13" gate="LED" x="83.82" y="50.8"/>
 <instance part="D13" gate="TH" x="139.7" y="25.4"/>
 <instance part="D9" gate="TH" x="99.06" y="25.4"/>
 <instance part="D1" gate="TH" x="17.78" y="25.4"/>
@@ -3707,6 +3710,7 @@ Source: http://www.vishay.com .. dcrcw.pdf</description>
 <instance part="D4" gate="TH" x="48.26" y="25.4"/>
 <instance part="D5" gate="TH" x="58.42" y="25.4"/>
 <instance part="D6" gate="TH" x="68.58" y="25.4"/>
+<instance part="D7" gate="TH" x="78.74" y="25.4"/>
 <instance part="D8" gate="TH" x="88.9" y="25.4"/>
 <instance part="D10" gate="TH" x="109.22" y="25.4"/>
 <instance part="D11" gate="TH" x="119.38" y="25.4"/>
@@ -3716,7 +3720,8 @@ Source: http://www.vishay.com .. dcrcw.pdf</description>
 <instance part="J1" gate="2" x="22.86" y="93.98" rot="MR0"/>
 <instance part="J1" gate="4" x="22.86" y="91.44" rot="MR0"/>
 <instance part="J1" gate="G" x="22.86" y="86.36" rot="MR0"/>
-<instance part="R1" gate="G$1" x="109.22" y="144.78" rot="R90"/>
+<instance part="R1" gate="G$1" x="83.82" y="76.2" rot="R90"/>
+<instance part="R3" gate="G$1" x="127" y="127" rot="R90"/>
 <instance part="R2" gate="G$1" x="63.5" y="127" rot="R90"/>
 </instances>
 <busses>
@@ -3732,7 +3737,8 @@ Source: http://www.vishay.com .. dcrcw.pdf</description>
 <wire x1="38.1" y1="33.02" x2="48.26" y2="33.02" width="0.1524" layer="91"/>
 <wire x1="48.26" y1="33.02" x2="58.42" y2="33.02" width="0.1524" layer="91"/>
 <wire x1="58.42" y1="33.02" x2="68.58" y2="33.02" width="0.1524" layer="91"/>
-<wire x1="68.58" y1="33.02" x2="88.9" y2="33.02" width="0.1524" layer="91"/>
+<wire x1="68.58" y1="33.02" x2="78.74" y2="33.02" width="0.1524" layer="91"/>
+<wire x1="78.74" y1="33.02" x2="88.9" y2="33.02" width="0.1524" layer="91"/>
 <wire x1="88.9" y1="33.02" x2="99.06" y2="33.02" width="0.1524" layer="91"/>
 <wire x1="99.06" y1="33.02" x2="109.22" y2="33.02" width="0.1524" layer="91"/>
 <wire x1="109.22" y1="33.02" x2="119.38" y2="33.02" width="0.1524" layer="91"/>
@@ -3755,6 +3761,9 @@ Source: http://www.vishay.com .. dcrcw.pdf</description>
 <pinref part="D6" gate="TH" pin="TH"/>
 <wire x1="68.58" y1="33.02" x2="68.58" y2="27.94" width="0.1524" layer="91"/>
 <junction x="68.58" y="33.02"/>
+<pinref part="D7" gate="TH" pin="TH"/>
+<wire x1="78.74" y1="27.94" x2="78.74" y2="33.02" width="0.1524" layer="91"/>
+<junction x="78.74" y="33.02"/>
 <pinref part="D8" gate="TH" pin="TH"/>
 <wire x1="88.9" y1="27.94" x2="88.9" y2="33.02" width="0.1524" layer="91"/>
 <junction x="88.9" y="33.02"/>
@@ -3819,36 +3828,50 @@ Source: http://www.vishay.com .. dcrcw.pdf</description>
 <segment>
 <pinref part="D8" gate="LED" pin="C"/>
 <pinref part="D9" gate="LED" pin="A"/>
-<wire x1="109.22" y1="109.22" x2="109.22" y2="114.3" width="0.1524" layer="91"/>
+<wire x1="83.82" y1="111.76" x2="83.82" y2="114.3" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$8" class="0">
 <segment>
 <pinref part="D9" gate="LED" pin="C"/>
 <pinref part="D10" gate="LED" pin="A"/>
-<wire x1="109.22" y1="96.52" x2="109.22" y2="101.6" width="0.1524" layer="91"/>
+<wire x1="83.82" y1="101.6" x2="83.82" y2="104.14" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$9" class="0">
 <segment>
 <pinref part="D10" gate="LED" pin="C"/>
 <pinref part="D11" gate="LED" pin="A"/>
-<wire x1="109.22" y1="83.82" x2="109.22" y2="88.9" width="0.1524" layer="91"/>
+<wire x1="83.82" y1="91.44" x2="83.82" y2="93.98" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="2-" class="0">
 <segment>
-<wire x1="91.44" y1="45.72" x2="91.44" y2="132.08" width="0.1524" layer="91"/>
-<label x="91.44" y="132.08" size="1.27" layer="95" ratio="12" rot="R90"/>
-<pinref part="D13" gate="LED" pin="C"/>
-<wire x1="109.22" y1="50.8" x2="109.22" y2="45.72" width="0.1524" layer="91"/>
-<wire x1="109.22" y1="45.72" x2="91.44" y2="45.72" width="0.1524" layer="91"/>
+<wire x1="127" y1="106.68" x2="119.38" y2="106.68" width="0.1524" layer="91"/>
+<wire x1="119.38" y1="106.68" x2="119.38" y2="137.16" width="0.1524" layer="91"/>
+<label x="119.38" y="137.16" size="1.27" layer="95" ratio="12" rot="R90"/>
+<pinref part="D7" gate="LED" pin="C"/>
+<wire x1="127" y1="106.68" x2="127" y2="111.76" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<label x="40.64" y="99.314" size="1.27" layer="95" ratio="12"/>
-<wire x1="33.02" y1="99.06" x2="43.18" y2="99.06" width="0.1524" layer="91"/>
-<pinref part="J1" gate="4" pin="1"/>
-<wire x1="33.02" y1="99.06" x2="27.94" y2="91.44" width="0.1524" layer="91"/>
+<label x="40.64" y="91.694" size="1.27" layer="95" ratio="12"/>
+<wire x1="33.02" y1="91.44" x2="43.18" y2="91.44" width="0.1524" layer="91"/>
+<pinref part="J1" gate="3" pin="1"/>
+<wire x1="27.94" y1="96.52" x2="33.02" y2="91.44" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$10" class="0">
+<segment>
+<pinref part="R1" gate="G$1" pin="1"/>
+<pinref part="D12" gate="LED" pin="A"/>
+<wire x1="83.82" y1="71.12" x2="83.82" y2="66.04" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$11" class="0">
+<segment>
+<pinref part="R1" gate="G$1" pin="2"/>
+<pinref part="D11" gate="LED" pin="C"/>
+<wire x1="83.82" y1="81.28" x2="83.82" y2="83.82" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="1-" class="0">
@@ -3865,25 +3888,19 @@ Source: http://www.vishay.com .. dcrcw.pdf</description>
 <pinref part="J1" gate="1" pin="1"/>
 <wire x1="33.02" y1="96.52" x2="27.94" y2="99.06" width="0.1524" layer="91"/>
 </segment>
+<segment>
+<wire x1="55.88" y1="40.64" x2="55.88" y2="129.54" width="0.1524" layer="91"/>
+<label x="55.88" y="129.54" size="1.27" layer="95" ratio="12" rot="R90"/>
+<pinref part="D13" gate="LED" pin="C"/>
+<wire x1="83.82" y1="45.72" x2="83.82" y2="40.64" width="0.1524" layer="91"/>
+<wire x1="83.82" y1="40.64" x2="55.88" y2="40.64" width="0.1524" layer="91"/>
+</segment>
 </net>
 <net name="2+" class="0">
 <segment>
-<label x="109.22" y="160.02" size="1.27" layer="95" ratio="12" rot="R90"/>
-<pinref part="R1" gate="G$1" pin="2"/>
-<wire x1="109.22" y1="157.48" x2="109.22" y2="149.86" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<label x="40.64" y="91.694" size="1.27" layer="95" ratio="12"/>
-<wire x1="33.02" y1="91.44" x2="43.18" y2="91.44" width="0.1524" layer="91"/>
-<pinref part="J1" gate="3" pin="1"/>
-<wire x1="27.94" y1="96.52" x2="33.02" y2="91.44" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="1+" class="0">
-<segment>
-<label x="63.5" y="142.24" size="1.27" layer="95" ratio="12" rot="R90"/>
-<pinref part="R2" gate="G$1" pin="2"/>
-<wire x1="63.5" y1="132.08" x2="63.5" y2="142.24" width="0.1524" layer="91"/>
+<pinref part="R3" gate="G$1" pin="2"/>
+<wire x1="127" y1="137.16" x2="127" y2="132.08" width="0.1524" layer="91"/>
+<label x="127" y="137.16" size="1.27" layer="95" ratio="12" rot="R90"/>
 </segment>
 <segment>
 <pinref part="J1" gate="2" pin="1"/>
@@ -3891,11 +3908,36 @@ Source: http://www.vishay.com .. dcrcw.pdf</description>
 <label x="40.64" y="94.234" size="1.27" layer="95" ratio="12"/>
 </segment>
 </net>
+<net name="1+" class="0">
+<segment>
+<label x="83.82" y="129.54" size="1.27" layer="95" ratio="12" rot="R90"/>
+<wire x1="83.82" y1="121.92" x2="83.82" y2="129.54" width="0.1524" layer="91"/>
+<pinref part="D8" gate="LED" pin="A"/>
+</segment>
+<segment>
+<label x="40.64" y="99.314" size="1.27" layer="95" ratio="12"/>
+<wire x1="33.02" y1="99.06" x2="43.18" y2="99.06" width="0.1524" layer="91"/>
+<pinref part="J1" gate="4" pin="1"/>
+<wire x1="33.02" y1="99.06" x2="27.94" y2="91.44" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<label x="63.5" y="142.24" size="1.27" layer="95" ratio="12" rot="R90"/>
+<pinref part="R2" gate="G$1" pin="2"/>
+<wire x1="63.5" y1="132.08" x2="63.5" y2="142.24" width="0.1524" layer="91"/>
+</segment>
+</net>
 <net name="N$14" class="0">
 <segment>
 <pinref part="D12" gate="LED" pin="C"/>
-<wire x1="109.22" y1="63.5" x2="109.22" y2="58.42" width="0.1524" layer="91"/>
+<wire x1="83.82" y1="58.42" x2="83.82" y2="53.34" width="0.1524" layer="91"/>
 <pinref part="D13" gate="LED" pin="A"/>
+</segment>
+</net>
+<net name="N$12" class="0">
+<segment>
+<pinref part="D7" gate="LED" pin="A"/>
+<pinref part="R3" gate="G$1" pin="1"/>
+<wire x1="127" y1="119.38" x2="127" y2="121.92" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$6" class="0">
@@ -3903,20 +3945,6 @@ Source: http://www.vishay.com .. dcrcw.pdf</description>
 <pinref part="D1" gate="LED" pin="A"/>
 <pinref part="R2" gate="G$1" pin="1"/>
 <wire x1="63.5" y1="121.92" x2="63.5" y2="119.38" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$10" class="0">
-<segment>
-<pinref part="D12" gate="LED" pin="A"/>
-<pinref part="D11" gate="LED" pin="C"/>
-<wire x1="109.22" y1="71.12" x2="109.22" y2="76.2" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$11" class="0">
-<segment>
-<pinref part="R1" gate="G$1" pin="1"/>
-<pinref part="D8" gate="LED" pin="A"/>
-<wire x1="109.22" y1="139.7" x2="109.22" y2="121.92" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
